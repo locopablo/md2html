@@ -1,0 +1,4 @@
+usage: md2html [-option(s)] input-filename [output-filename]
+options:
+  -h, --help      This help text.
+  -v, --verbose   Enable verbose output.
