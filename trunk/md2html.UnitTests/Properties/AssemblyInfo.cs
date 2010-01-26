@@ -1,21 +1,18 @@
 ﻿using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
-using System.Resources;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("md2html")]
-[assembly: AssemblyDescription("Markdown to HTML Command Line Conversion Tool.")]
+[assembly: AssemblyTitle("md2html.UnitTests")]
+[assembly: AssemblyDescription("Unit Tests for md2html project")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("md2html")]
+[assembly: AssemblyProduct("md2html.UnitTests")]
 [assembly: AssemblyCopyright("Copyright © Lasse Vågsæther Karlsen 2010, All rights reserved.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
-[assembly: InternalsVisibleTo("md2html.UnitTests")]
-[assembly: InternalsVisibleTo("md2html.IntegrationTests")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
 // to COM components.  If you need to access a type in this assembly from 
@@ -23,7 +20,7 @@ using System.Resources;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("a68d76bb-2853-4b7c-a506-489a65f23c26")]
+[assembly: Guid("f551dd93-9ec2-4f79-bbb5-49c16f9f54ca")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -37,4 +34,3 @@ using System.Resources;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
-[assembly: NeutralResourcesLanguageAttribute("en-US")]
