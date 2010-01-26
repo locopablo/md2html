@@ -7,6 +7,8 @@ namespace md2html
     {
         public static void Main(string[] args)
         {
+            Configuration configuration = new Configuration();
+            CommandLineArguments.Configure(configuration, args);
         }
     }
 }
