@@ -6,15 +6,14 @@ using System.Resources;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("md2html")]
-[assembly: AssemblyDescription("Markdown to HTML Command Line Conversion Tool.")]
+[assembly: AssemblyTitle("md2html.Tests")]
+[assembly: AssemblyDescription("Unit Tests for md2html project")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("md2html")]
+[assembly: AssemblyProduct("md2html.Tests")]
 [assembly: AssemblyCopyright("Copyright © Lasse Vågsæther Karlsen 2010, All rights reserved.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
-[assembly: InternalsVisibleTo("md2html.Tests")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
 // to COM components.  If you need to access a type in this assembly from 
@@ -22,7 +21,7 @@ using System.Resources;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("a68d76bb-2853-4b7c-a506-489a65f23c26")]
+[assembly: Guid("e3b470a0-11d1-40c4-90d3-fd8c8b91a5ba")]
 
 // Version information for an assembly consists of the following four values:
 //
