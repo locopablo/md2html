@@ -19,30 +19,46 @@ namespace md2html.Tests
 
         private Result GetOutput(params string[] args)
         {
-            using (StringWriter output = new StringWriter())
-            using (StringWriter error = new StringWriter())
+            TextWriter oldOutput = Console.Out;
+            TextWriter oldError = Console.Error;
+            try
             {
-                Console.SetOut(output);
-                Console.SetError(error);
-                Environment.ExitCode = 0;
+                using (StringWriter output = new StringWriter())
+                using (StringWriter error = new StringWriter())
+                {
+                    Console.SetOut(output);
+                    Console.SetError(error);
+                    Environment.ExitCode = 0;
 
-                Program.Main(args);
+                    Program.Main(args);
 
-                Result result = new Result();
-                result.Output = output.ToString();
-                result.Error = error.ToString();
-                result.ExitCode = Environment.ExitCode;
-                return result;
+                    Result result = new Result();
+                    result.Output = output.ToString();
+                    result.Error = error.ToString();
+                    result.ExitCode = Environment.ExitCode;
+
+                    return result;
+                }
             }
+            finally
+            {
+                Console.SetOut(oldOutput);
+                Console.SetError(oldError);
+            }
+        }
+
+        private void VerifyNoErrors(Result result)
+        {
+            Assert.That(result.Error, Is.EqualTo(string.Empty));
+            Assert.That(result.ExitCode, Is.EqualTo(0));
         }
 
         [Test]
         public void NoInput_NoOutput()
         {
             Result result = GetOutput();
+            VerifyNoErrors(result);
             Assert.That(result.Output, Is.EqualTo(string.Empty));
-            Assert.That(result.Error, Is.EqualTo(string.Empty));
-            Assert.That(result.ExitCode, Is.EqualTo(0));
         }
     }
 }
