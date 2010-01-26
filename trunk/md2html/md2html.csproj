@@ -64,6 +64,12 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\md2html.MarkdownSharp\md2html.MarkdownSharp.csproj">
+      <Project>{0D90EB99-EB1D-4565-9EFD-E1FCA2E36E96}</Project>
+      <Name>md2html.MarkdownSharp</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
