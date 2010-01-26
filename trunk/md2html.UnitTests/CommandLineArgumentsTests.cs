@@ -40,5 +40,21 @@ namespace md2html.UnitTests
             Assert.That(configuration.InputFileName, Is.EqualTo("a"));
             Assert.That(configuration.OutputFileName, Is.EqualTo("b"));
         }
+
+        [Test]
+        public void Configure_OnlyOneFileName_IsUsedToProduceOutputFileName()
+        {
+            Configuration configuration = new Configuration();
+            CommandLineArguments.Configure(configuration, new[] { "a.md" });
+            Assert.That(configuration.OutputFileName, Is.EqualTo("a.html"));
+        }
+
+        [Test]
+        public void Configure_OneFileNameAndNoTitle_IsUsedToProduceTitle()
+        {
+            Configuration configuration = new Configuration();
+            CommandLineArguments.Configure(configuration, new[] { "directory\\a.md" });
+            Assert.That(configuration.Title, Is.EqualTo("a.md"));
+        }
     }
 }
