@@ -8,5 +8,10 @@ namespace md2html
             : base(message)
         {
         }
+
+        public ErrorMessageException(string message, Exception innerException)
+            : base(message, innerException)
+        {
+        }
     }
 }

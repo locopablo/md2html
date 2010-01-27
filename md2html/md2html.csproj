@@ -42,6 +42,7 @@
     <Compile Include="Actions.cs" />
     <Compile Include="CommandLineArguments.cs" />
     <Compile Include="Configuration.cs" />
+    <Compile Include="DocumentTransformer.cs" />
     <Compile Include="ErrorMessageException.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
