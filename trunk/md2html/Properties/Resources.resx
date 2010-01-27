@@ -149,4 +149,8 @@
   <data name="VersionMessageWithoutMarkdown" xml:space="preserve">
     <value>md2html v{0}</value>
   </data>
+  <data name="InputFileNotFoundErrorMessage" xml:space="preserve">
+    <value>input file {0}, or part of its path does not exist ({1})</value>
+    <comment>InputFileNotFoundErrorMessage description</comment>
+  </data>
 </root>

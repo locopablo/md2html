@@ -4,8 +4,6 @@ using System.Reflection;
 using md2html.Properties;
 using System.IO;
 using System.Text;
-using System.Threading;
-using System.Globalization;
 
 namespace md2html
 {
@@ -23,22 +21,6 @@ namespace md2html
         {
             Welcome(configuration);
             Console.Out.WriteLine(Resources.HelpText);
-        }
-
-        private static void TransformFile(Configuration configuration)
-        {
-            Markdown md = new Markdown();
-
-            string input;
-            using (StreamReader reader = new StreamReader(configuration.InputFileName))
-            {
-                input = reader.ReadToEnd();
-            }
-            string output = md.Transform(input);
-            using (StreamWriter writer = new StreamWriter(configuration.OutputFileName, false, Encoding.UTF8))
-            {
-                writer.Write(output);
-            }
         }
 
         public static void Main(string[] args)
@@ -62,7 +44,7 @@ namespace md2html
                         throw new Exception(Properties.Resources.UnknownActionErrorMessage);
 
                     case Actions.TransformFile:
-                        TransformFile(configuration);
+                        DocumentTransformer.Transform(configuration);
                         Environment.ExitCode = 0;
                         return;
 
