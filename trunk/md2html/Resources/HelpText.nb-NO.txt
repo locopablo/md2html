@@ -1,0 +1,9 @@
+bruk: md2html [-valg] inndata-filnavn [utdata-filnavn]
+valg:
+  -h, --help      Denne hjelpe teksten.
+  -v, --verbose   Slå på utførlig logging.
+
+Merk at valgene har engelske navn på grunn av at verktøyet
+er opprinnelig et engelsk verktøy. De engelske valgene
+gjør at man slipper å måtte ta hensyn til maskin-språk
+når man lager batchfiler og script som bruker verktøyet.
