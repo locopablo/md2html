@@ -4,6 +4,8 @@ using System.Reflection;
 using md2html.Properties;
 using System.IO;
 using System.Text;
+using System.Threading;
+using System.Globalization;
 
 namespace md2html
 {
