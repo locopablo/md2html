@@ -1,3 +1,5 @@
+@@ title md2html Operations Specification
+
 Specifications
 ==============
 
@@ -36,6 +38,11 @@ Postprocessor
 The postprocessor reads the html produced by MarkdownSharp and
 postprocesses it, most notably by fixing code blocks by
 formatting them according to the specified options.
+
+The postprocessor will also wrap the MarkdownSharp output
+in a proper HTML document context, by adding `<html>...</html>`,
+`<head>...</head>`, and `<body>...</body>` tags, with the
+appropriate content.
 
 Directives
 ==========
