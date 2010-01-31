@@ -13,8 +13,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "md2html.UnitTests", "md2htm
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "md2html.IntegrationTests", "md2html.IntegrationTests\md2html.IntegrationTests.csproj", "{ACB0548C-A5EB-4324-B9A1-E250F738FC42}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "md2html.MarkdownSharp", "md2html.MarkdownSharp\md2html.MarkdownSharp.csproj", "{0D90EB99-EB1D-4565-9EFD-E1FCA2E36E96}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,10 +31,6 @@ Global
 		{ACB0548C-A5EB-4324-B9A1-E250F738FC42}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ACB0548C-A5EB-4324-B9A1-E250F738FC42}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ACB0548C-A5EB-4324-B9A1-E250F738FC42}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0D90EB99-EB1D-4565-9EFD-E1FCA2E36E96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0D90EB99-EB1D-4565-9EFD-E1FCA2E36E96}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0D90EB99-EB1D-4565-9EFD-E1FCA2E36E96}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0D90EB99-EB1D-4565-9EFD-E1FCA2E36E96}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

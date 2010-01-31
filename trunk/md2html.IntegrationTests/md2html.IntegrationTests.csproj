@@ -52,10 +52,6 @@
     <Compile Include="TransformationTests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\md2html.MarkdownSharp\md2html.MarkdownSharp.csproj">
-      <Project>{0D90EB99-EB1D-4565-9EFD-E1FCA2E36E96}</Project>
-      <Name>md2html.MarkdownSharp</Name>
-    </ProjectReference>
     <ProjectReference Include="..\md2html\md2html.csproj">
       <Project>{371BCFC4-B356-4BEE-83D7-FCA7F127F351}</Project>
       <Name>md2html</Name>
