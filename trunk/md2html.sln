@@ -6,6 +6,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CB731012-7A22-4EED-ACD6-C9B1082036DE}"
 	ProjectSection(SolutionItems) = preProject
 		license.txt = license.txt
+		specifications.md = specifications.md
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "md2html.UnitTests", "md2html.UnitTests\md2html.UnitTests.csproj", "{330D547B-D49F-4E2A-9E41-7E5C4C28ED20}"
