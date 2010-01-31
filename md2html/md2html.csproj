@@ -32,6 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
@@ -44,6 +45,7 @@
     <Compile Include="Configuration.cs" />
     <Compile Include="DocumentTransformer.cs" />
     <Compile Include="ErrorMessageException.cs" />
+    <Compile Include="MarkdownSharp\Markdown.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.nb-NO.Designer.cs">
@@ -77,12 +79,6 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\md2html.MarkdownSharp\md2html.MarkdownSharp.csproj">
-      <Project>{0D90EB99-EB1D-4565-9EFD-E1FCA2E36E96}</Project>
-      <Name>md2html.MarkdownSharp</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\HelpText.txt" />
