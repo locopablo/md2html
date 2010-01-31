@@ -14,10 +14,7 @@ namespace md2html
             string input;
             try
             {
-                using (StreamReader reader = new StreamReader(configuration.InputFileName))
-                {
-                    input = reader.ReadToEnd();
-                }
+                input = PreProcessor.ReadAndProcess(configuration.InputFileName);
             }
             catch (FileNotFoundException ex)
             {

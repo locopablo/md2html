@@ -153,4 +153,16 @@
     <value>input file {0}, or part of its path does not exist ({1})</value>
     <comment>InputFileNotFoundErrorMessage description</comment>
   </data>
+  <data name="RecursiveFileInclusionErrorMessage" xml:space="preserve">
+    <value>recursive inclusion of Markdown source file '{0}'</value>
+    <comment>RecursiveFileInclusionErrorMessage description</comment>
+  </data>
+  <data name="DirectiveNameMustFollowSingleSpaceErrorMessage" xml:space="preserve">
+    <value>directive name must be separated from the double-at symbols by exactly one space, at {0}#{1}: {2}</value>
+    <comment>DirectiveNameMustFollowSingleSpaceErrorMessage description</comment>
+  </data>
+  <data name="UnknownDirectiveErrorMessage" xml:space="preserve">
+    <value>unknown directive '{0}', at {1}#{2}: {3}</value>
+    <comment>UnknownDirectiveErrorMessage description</comment>
+  </data>
 </root>
