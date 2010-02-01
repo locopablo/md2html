@@ -12,13 +12,13 @@ namespace md2html
             if (Object.ReferenceEquals(null, args))
                 throw new ArgumentNullException("args");
 
-            Regex reOption = new Regex(@"^(/|--?)(\w+|\?)$", RegexOptions.IgnoreCase);
+            Regex reOption = new Regex(@"^(/|--?)(?<option>\w+|\?)([:=](?<arg>.+))$", RegexOptions.IgnoreCase);
             foreach (string arg in args)
             {
                 Match maOption = reOption.Match(arg);
                 if (maOption.Success)
                 {
-                    switch (arg)
+                    switch (maOption.Groups["option"].Value)
                     {
                         case "/?":
                         case "/h":
@@ -34,6 +34,16 @@ namespace md2html
                         case "-v":
                         case "--verbose":
                             configuration.Verbose = true;
+                            break;
+
+                        case "/t":
+                        case "/title":
+                        case "-t":
+                        case "--title":
+                            if (maOption.Groups["arg"].Success)
+                                configuration.Title = maOption.Groups["arg"].Value;
+                            else
+                                throw new ErrorMessageException("--title option needs to specify a title");
                             break;
 
                         default:

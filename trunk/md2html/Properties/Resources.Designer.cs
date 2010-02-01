@@ -80,20 +80,12 @@ namespace md2html.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to error: {0}.
+        ///   Looks up a localized string similar to error: {0}
+        ///for help: md2html --help.
         /// </summary>
         internal static string ErrorMessage {
             get {
                 return ResourceManager.GetString("ErrorMessage", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to unknown directive &apos;{0}&apos;, at {1}#{2}: {3}.
-        /// </summary>
-        internal static string UnknownDirectiveErrorMessage {
-            get {
-                return ResourceManager.GetString("UnknownDirectiveErrorMessage", resourceCulture);
             }
         }
         
@@ -110,11 +102,38 @@ namespace md2html.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to the ignore directive needs exactly 1 argument, was given {0}, at {1}#{2}: {3}.
+        /// </summary>
+        internal static string IgnoreDirectiveNeedsExactlyOneArgumentErrorMessage {
+            get {
+                return ResourceManager.GetString("IgnoreDirectiveNeedsExactlyOneArgumentErrorMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to the ignore directive was given an unknown warning code, at {0}#{1}: {2}.
+        /// </summary>
+        internal static string IgnoreDirectiveUnknownWarningCodeErrorMessage {
+            get {
+                return ResourceManager.GetString("IgnoreDirectiveUnknownWarningCodeErrorMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to input file {0}, or part of its path does not exist ({1}).
         /// </summary>
         internal static string InputFileNotFoundErrorMessage {
             get {
                 return ResourceManager.GetString("InputFileNotFoundErrorMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to warning W001: multiple titles specified, overwriting with new title: {0}.
+        /// </summary>
+        internal static string MultipleTitlesSpecifiedWarningMessage {
+            get {
+                return ResourceManager.GetString("MultipleTitlesSpecifiedWarningMessage", resourceCulture);
             }
         }
         
@@ -133,6 +152,15 @@ namespace md2html.Properties {
         internal static string RecursiveFileInclusionErrorMessage {
             get {
                 return ResourceManager.GetString("RecursiveFileInclusionErrorMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to the title directive needs exactly 1 argument, was given {0}, at {1}#{2}: {3}.
+        /// </summary>
+        internal static string TitleDirectiveNeedsExactlyOneArgumentErrorMessage {
+            get {
+                return ResourceManager.GetString("TitleDirectiveNeedsExactlyOneArgumentErrorMessage", resourceCulture);
             }
         }
         
@@ -160,6 +188,15 @@ namespace md2html.Properties {
         internal static string UnknownActionErrorMessage {
             get {
                 return ResourceManager.GetString("UnknownActionErrorMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to unknown directive &apos;{0}&apos;, at {1}#{2}: {3}.
+        /// </summary>
+        internal static string UnknownDirectiveErrorMessage {
+            get {
+                return ResourceManager.GetString("UnknownDirectiveErrorMessage", resourceCulture);
             }
         }
         

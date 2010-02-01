@@ -1,6 +1,7 @@
 using System;
 using System.IO;
 using System.Diagnostics;
+using System.Collections.Generic;
 
 namespace md2html
 {
@@ -13,8 +14,10 @@ namespace md2html
             Title = string.Empty;
             Action = Actions.Unknown;
             Verbose = false;
+            IgnoreWarnings = new HashSet<string>();
         }
 
+        public HashSet<string> IgnoreWarnings { get; set; }
         public string InputFileName { get; set; }
         public string OutputFileName { get; set; }
         public string Title { get; set; }
@@ -30,9 +33,6 @@ namespace md2html
             {
                 if (OutputFileName == string.Empty)
                     OutputFileName = Path.ChangeExtension(InputFileName, ".html");
-
-                if (Title == string.Empty)
-                    Title = Path.GetFileName(InputFileName);
             }
 
             if (InputFileName != string.Empty && OutputFileName != string.Empty)
