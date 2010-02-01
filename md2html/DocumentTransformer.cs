@@ -14,7 +14,7 @@ namespace md2html
             string input;
             try
             {
-                input = PreProcessor.ReadAndProcess(configuration.InputFileName);
+                input = PreProcessor.ReadAndProcess(configuration.InputFileName, configuration);
             }
             catch (FileNotFoundException ex)
             {
@@ -39,8 +39,9 @@ namespace md2html
             Markdown md = new Markdown();
 
             string input = ReadInputFile(configuration);
-            string output = md.Transform(input);
-            WriteOutputFile(configuration, output);
+            string html = md.Transform(input);
+            string finalHtml = PostProcessor.Process(html, configuration);
+            WriteOutputFile(configuration, finalHtml);
         }
     }
 }

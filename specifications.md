@@ -1,4 +1,4 @@
-@@ title md2html Operations Specification
+@@ title "md2html Operations Specification"
 
 Specifications
 ==============
@@ -104,3 +104,23 @@ W001: Warning about multiple title directives
 
 This warning will be output when there are multiple `@@ title ...`
 directives present in the Markdown code.
+
+D002: ignore directive
+
+This directive can be used from within the Markdown file itself
+to specify that a warning message should be ignored for the rest of the
+processing.
+
+Typically you will use this when including multiple Markdown files into
+one document, and more than one of them specifies a title.
+
+The directive name is "ignore", all lowercase. The directive takes one
+argument, the 4-character identification code of the warning message,
+where the first letter is the uppercase W, and the rest are digits.
+
+Example:
+
+    @@ ignore W001
+
+At present there is no way to un-ignore a warning. This may change in the
+future.
