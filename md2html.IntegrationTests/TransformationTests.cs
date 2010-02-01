@@ -25,7 +25,7 @@ namespace md2html.IntegrationTests
         [Test]
         public void Transform_EmptyInput_ProducesEmptyOutput()
         {
-            Assert.That(Transform(string.Empty), Is.EqualTo(string.Empty));
+            Assert.That(Transform(string.Empty).Contains("<body></body>"), Is.True);
         }
     }
 }
