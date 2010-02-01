@@ -12,7 +12,7 @@ namespace md2html
             if (Object.ReferenceEquals(null, args))
                 throw new ArgumentNullException("args");
 
-            Regex reOption = new Regex(@"^(/|--?)(?<option>\w+|\?)([:=](?<arg>.+))$", RegexOptions.IgnoreCase);
+            Regex reOption = new Regex(@"^(?<option>(/|--?)(\w+|\?))([:=](?<arg>.+))?$", RegexOptions.IgnoreCase);
             foreach (string arg in args)
             {
                 Match maOption = reOption.Match(arg);
